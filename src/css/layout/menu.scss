@@ -1,17 +1,30 @@
 /* MENU */
 
-nav{
+aside{
     position: absolute;
     top: 70px; left: 0; bottom: 0;
     width: 240px;
     background: #22313F;
+    #menu{
+        margin-top: 200px;
+        #menu_filtre{
+            line-height: 30px;
+            text-align: center;
+            .filtre{
+                margin: 20px 0;
+                
+            }
+        }
+    }
 }
 
-#menu_filtre{
-    margin: 200px 0;
-    text-align: center;
-}
-
-.filtre{
-    margin: 20px 0;
+.search{
+    padding: 15px 0 15px 0;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    background-color: #34495E;
+    color: #fff;
 }
