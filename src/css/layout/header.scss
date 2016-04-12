@@ -1,0 +1,49 @@
+/* HEADER */
+
+header{
+    height: 70px;
+    background: #22A7F0;
+}
+
+/* LOGO */
+
+#logo{
+    float: left;
+    width: 240px;
+    height: 70px;
+    line-height: 70px;
+    background: #19B5FE;
+    p{
+        font-size: 24px;
+        text-align: center;
+        strong{
+            font-weight: bold;
+        }
+    } 
+}
+
+#header_menu{
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+}
+
+/* LOGIN */
+
+#login{
+    display: inline-block;
+    float: right;
+    margin-right: 150px;
+    width: 150px;
+    text-align: center;
+}
+
+.ion-chevron-down{
+    margin-left: 5px;  
+}
+
+#login:hover{
+    background: #6BB9F0;
+}
+
+

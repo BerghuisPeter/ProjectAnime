@@ -1,0 +1,20 @@
+/* MENU */
+/* line 3, C:/wamp/www/ProjectAnime/src/css/layout/menu.scss */
+nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  background: #22313F; }
+
+/* line 10, C:/wamp/www/ProjectAnime/src/css/layout/menu.scss */
+#menu_filtre {
+  margin: 200px 0;
+  text-align: center; }
+
+/* line 15, C:/wamp/www/ProjectAnime/src/css/layout/menu.scss */
+.filtre {
+  margin: 20px 0; }
+
+/*# sourceMappingURL=menu.css.map */
