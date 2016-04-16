@@ -1,6 +1,8 @@
 <?php
-class Connection_model extends CI_Model {
-    
+
+class Connection_model extends CI_Model
+{
+
 
     public function get_user()
     {
@@ -9,6 +11,18 @@ class Connection_model extends CI_Model {
 
         $query = $this->db->get_where('user', array('user_name' => $userName, 'password' => $password));
         return $query->result_array();
+    }
+
+
+    public function initializeSession($data)
+    {
+        $sessiondata = array(
+            'id' => $data['user'][0]['id'],
+            'userName' => $data['user'][0]['user_name'],
+            'email' => $data['user'][0]['email'],
+            'password' => $data['user'][0]['password']
+        );
+        $this->session->set_userdata($sessiondata);
     }
 
 }
