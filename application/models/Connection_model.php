@@ -20,7 +20,8 @@ class Connection_model extends CI_Model
             'id' => $data['user'][0]['id'],
             'userName' => $data['user'][0]['user_name'],
             'email' => $data['user'][0]['email'],
-            'password' => $data['user'][0]['password']
+            'password' => $data['user'][0]['password'],
+            'type' => $data['user'][0]['type']
         );
         $this->session->set_userdata($sessiondata);
     }

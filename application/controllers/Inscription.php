@@ -11,7 +11,7 @@ class Inscription extends CI_Controller
 
     public function index()
     {
-        $data['title'] = 'Inscription';
+        $data['title'] = 'inscription';
 
         $this->form_validation->set_rules('v_userName', 'user name', 'required');
         $this->form_validation->set_rules('v_passWord', 'password', 'required');
