@@ -13,6 +13,6 @@
 <label for="text">password</label>
 <input type="input" name="v_passWord"/><br/>
 
-<input type="submit" name="submit" value="Login"/>
+<input type="submit" name="submit" value="Sign-up!"/>
 
 </form>

@@ -20,9 +20,7 @@ class Connection extends CI_Controller
         $this->form_validation->set_rules('v_passWord', 'password', 'required');
 
         if ($this->form_validation->run() === FALSE) {
-            $this->load->view('templates/header', $data);
-            $this->load->view('connection/login');
-            $this->load->view('templates/footer');
+            redirect('');
         } else {
             $data['user'] = $this->connection_model->get_user();
             // if user not found or pw incorrect
