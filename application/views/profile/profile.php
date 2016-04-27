@@ -1,3 +1,4 @@
-<?php
+<h1>Profile: <?php echo $this->session->userName ?></h1>
 
-    echo "we are LOGGED!!!!!!!!!!!!!!!!!!";
+<p>e-mail: <?php echo $this->session->email ?></p>
+<p>password: </p>

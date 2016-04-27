@@ -11,6 +11,9 @@ class Connection extends CI_Controller
 
     public function index()
     {
+        if (isset($this->session->id))
+            redirect('');
+
         $data['title'] = 'Login';
 
         $this->form_validation->set_rules('v_userName', 'user name', 'required');
@@ -28,7 +31,7 @@ class Connection extends CI_Controller
             } // if user found and pw correct
             else {
                 $this->connection_model->initializeSession($data);
-                $this->load->view('connection/login_success');
+                redirect('profile');
             }
         }
 

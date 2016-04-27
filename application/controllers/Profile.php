@@ -7,15 +7,19 @@ class Profile extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Profile_model');
-        if (!isset($_SESSION['id']))
-            redirect('');
     }
 
     public function index()
     {
+        if (!isset($this->session->id))
+            redirect('');
+
         $data['title'] = 'Profile';
 
+        $this->load->view('templates/header', $data);
         $this->load->view('profile/profile');
+        $this->load->view('templates/footer');
+
 
     }
 
