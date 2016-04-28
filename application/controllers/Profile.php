@@ -19,8 +19,11 @@ class Profile extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('profile/profile');
         $this->load->view('templates/footer');
+    }
 
-
+    public function passwordChange()
+    {
+        
     }
 
 
