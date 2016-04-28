@@ -1,55 +1,45 @@
-body{
-    padding-top: 60px;
+body{ padding-top: 50px; }
+
+/** CONTENT **/
+
+.content-sign-up{
+    margin-top: 200px;
+    text-align: center;
 }
 
-.sidebar{
-    display: none;
+.content-profil{
+    margin-top: 50px;
 }
 
-@media (min-width: 768px) {
-    .sidebar{
-        float: left;
-        position: fixed;
-        top: 50px;
-        left: 0;
-        bottom: 0;
-        z-index: 500;
-        display: block;
-        padding: 40px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        background-color: #f5f5f5;
-        border-right: 1px solid #eee;
-    }
+.content-info-profil{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.nav-sidebar {
-  margin-right: -21px;
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
+.media{
+    border: 1px solid #eeeeee;
+    padding: 10px;
 }
 
-.content-list {
-    position: relative;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    top: 50px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    width: 100%;
-    height: auto;
+.notif-action{
+    float: right;
+}
+
+.btn-center{
+    margin-top: 50px;
+}
+
+/** TITLE **/
+
+.sign-up-title{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/** IMG **/
+
+img-rounded{
+    height: 180px;
+    width: 180px;
 }
 

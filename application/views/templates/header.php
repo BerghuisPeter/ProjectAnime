@@ -34,10 +34,8 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <?php if (!isset($this->session->id)) echo '<li><a href="inscription">Sign-up</a></li>'; ?>
-                            <?php if (!isset($this->session->id)) echo '<li data-toggle="modal" data-target="#myModal"><a href="#">Login</a></li>'; ?>
-                            <?php if (isset($this->session->id)) echo '<li><a href="profile">Profile</a></li>'; ?>
-                            <?php if (isset($this->session->id)) echo '<li><a href="connection/logout">Logout</a></li>'; ?>
+                           <li><a href="inscription">Sign-up</a></li>
+                           <li data-toggle="modal" data-target="#myModal"><a href="#">Login</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-vertical"></span></a>

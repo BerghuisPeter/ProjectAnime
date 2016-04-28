@@ -16,8 +16,22 @@ class Profile extends CI_Controller
 
         $data['title'] = 'Profile';
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('profile/profile');
+        //$data['userProfile'] = $this->profile_model->getInfoProfil($profileId);
+
+        $this->load->view('templates/logged_header', $data);
+        $this->load->view('profile/profile', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function editProfile()
+    {
+        if (!isset($this->session->id))
+            redirect('');
+
+        $data['title'] = 'Edit my profile';
+
+        $this->load->view('templates/logged_header', $data);
+        $this->load->view('profile/MyProfile');
         $this->load->view('templates/footer');
     }
 

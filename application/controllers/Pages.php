@@ -7,9 +7,6 @@ class Pages extends CI_Controller
     function __construct()
     {
         parent::__construct();
-
-        // Load url helper
-        $this->load->helper('url');
     }
 
 
@@ -22,7 +19,11 @@ class Pages extends CI_Controller
 
         $data['title'] = ucfirst($page); // Capitalize the first letter
 
-        $this->load->view('templates/header', $data);
+        if (!isset($this->session->id))
+            $this->load->view('templates/header', $data);
+        else
+            $this->load->view('templates/logged_header', $data);
+
         $this->load->view('pages/' . $page, $data);
         $this->load->view('templates/footer', $data);
     }
