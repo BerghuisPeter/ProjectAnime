@@ -45,7 +45,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                        aria-haspopup="true" aria-expanded="false">Account <span class="glyphicon glyphicon-user"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="profile">Edit Profil</a></li>
+                        <li><a href="profile/editProfile">Edit Profil</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="connection/logout">Logout</a></li>
                     </ul>

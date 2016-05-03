@@ -31,7 +31,7 @@ class Profile extends CI_Controller
         $data['title'] = 'Edit my profile';
 
         $this->load->view('templates/logged_header', $data);
-        $this->load->view('profile/MyProfile');
+        $this->load->view('profile/my_profile');
         $this->load->view('templates/footer');
     }
 
